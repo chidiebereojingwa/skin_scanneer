@@ -1,0 +1,55 @@
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'disease/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'disease/bootstrap.css' %}">
+<title>Home: Skin test</title>
+</head>
+<body class="side-header">
+  <div id="wrapper" class="clearfix" style="opacity: 1; animation-duration: 1500ms;">
+<header id="header" class="no-sticky">
+
+		<div id="header-wrap">
+
+			<div class="container clearfix">
+
+				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+				<!-- Logo
+				============================================= -->
+				<div id="logo" class="nobottomborder"><h3><strong style="color: #FFB6C1;">MYSKINDOC</strong></h3>
+          <a class="standard-logo"><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+					<a class="retina-logo" ><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+				</div><!-- #logo end -->
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu">
+
+					<ul class="sf-js-enabled">
+						<li class="sub-menu"><a href="{% url 'disease:index'%}" class="sf-with-ul"><div>Home</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:uploadskin'%}" class="sf-with-ul"><div>Skin Detector</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:information'%}" class="sf-with-ul"><div>Information Page</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:help'%}" class="sf-with-ul"><div>Risks and Prevention</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:seedoctor'%}" class="sf-with-ul"><div>See Doctor</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:contact'%}" class="sf-with-ul"><div>About Us</div></a></li>
+					</ul>
+
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</div>
+
+	</header>
+<div class="heading-block center top-padding">
+	<h1>welcome to <strong style="color: #FFB6C1;">MYSKINDOC</strong></h1>
+<span>Click below to proceed with the test</span>
+</div>
+<div class="clearfix center" style="background-color:Pink;">
+<a href="{% url 'disease:uploadskin'%}" class="button button-desc button-border button-rounded center">
+  <div>Start Skin Test</div>
+  <span>Please upload closeup photo of affected skin</span>
+</a>
+</div>
+</div>
+</body>

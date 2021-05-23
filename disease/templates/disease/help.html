@@ -1,0 +1,126 @@
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'disease/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'disease/bootstrap.css' %}">
+<title>Help</title>
+</head>
+<body class="side-header" >
+  <div id="wrapper" class="clearfix" style="opacity: 1; animation-duration: 1500ms;">
+    <header id="header" class="no-sticky">
+
+		<div id="header-wrap">
+
+			<div class="container clearfix">
+
+				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+				<!-- Logo
+				============================================= -->
+				<div id="logo" class="nobottomborder">
+          <a class="standard-logo"><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+					<a class="retina-logo" ><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+
+				</div><!-- #logo end -->
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu">
+
+					<ul class="sf-js-enabled">
+						<li class="sub-menu"><a href="{% url 'disease:index'%}" class="sf-with-ul"><div>Home</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:uploadskin'%}" class="sf-with-ul"><div>Skin Detector</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:information'%}" class="sf-with-ul"><div>Information Page</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:help'%}" class="sf-with-ul"><div>Risks and Prevention</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:seedoctor'%}" class="sf-with-ul"><div>See Doctor</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:contact'%}" class="sf-with-ul"><div>About Us</div></a></li>
+					</ul>
+
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</div>
+
+    </header>
+
+
+<div class='container' >
+
+        <h2 class='display-4'>Risk Factors and Prevention</h2>
+        <hr>
+        <h3 style="background-color:Pink;">Risk Factors:</h3>
+        <p class="lead">
+            <h4><strong>Fair skin</strong></h4>Anyone, regardless of skin color, can get skin cancer.
+            However, having less pigment (melanin) in your skin provides less protection from damaging UV radiation.
+            If you have blond or red hair and light-colored eyes, and you freckle or sunburn easily, you're much more likely to develop skin cancer than is a person with darker skin.
+            <h4><strong>A history of sunburns</strong></h4>Having had one or more blistering sunburns as a child or teenager increases your risk of developing skin cancer as an adult.
+            Sunburns in adulthood also are a risk factor.
+            <h4><strong>Excessive sun exposure</strong></h4>Anyone who spends considerable time in the sun may develop skin cancer, especially if the skin isn't protected by sunscreen or clothing.
+            Tanning, including exposure to tanning lamps and beds, also puts you at risk. A tan is your skin's injury response to excessive UV radiation.
+            <h4><strong>Sunny or high-altitude climates</strong></h4>People who live in sunny, warm climates are exposed to more sunlight than are people who live in colder climates.
+            Living at higher elevations, where the sunlight is strongest, also exposes you to more radiation.
+            <h4><strong>Moles</strong></h4>People who have many moles or abnormal moles called dysplastic nevi are at increased risk of skin cancer.
+            These abnormal moles — which look irregular and are generally larger than normal moles — are more likely than others to become cancerous.
+            If you have a history of abnormal moles, watch them regularly for changes.
+            <h4><strong>Precancerous skin lesions</strong></h4>Having skin lesions known as actinic keratoses can increase your risk of developing skin cancer.
+            These precancerous skin growths typically appear as rough, scaly patches that range in color from brown to dark pink.
+            They're most common on the face, head and hands of fair-skinned people whose skin has been sun damaged.
+            <h4><strong>Family history of skin cancer</strong></h4>
+            If one of your parents or a sibling has had skin cancer, you may have an increased risk of the disease.
+            <h4><strong>Personal history of skin cancer</strong></h4>
+            If you developed skin cancer once, you're at risk of developing it again.
+            <h4><strong>Weakened immune system</strong></h4>People with weakened immune systems have a greater risk of developing skin cancer.
+            This includes people living with HIV/AIDS and those taking immunosuppressant drugs after an organ transplant.
+            <h4><strong>Exposure to radiation</strong></h4>
+            People who received radiation treatment for skin conditions such as eczema and acne may have an increased risk of skin cancer, particularly basal cell carcinoma.
+            <h4><strong>Exposure to certain substances</strong></h4>
+            Exposure to certain substances, such as arsenic, may increase your risk of skin cancer.
+        </p>
+        <h3 style="background-color:Pink;">Prevention:</h3>
+        <p class="lead">
+            <h4><strong>Avoid the sun during the middle of the day</strong></h4>
+            For many people in North America, the sun's rays are strongest between about 10 a.m. and 4 p.m.
+            Schedule outdoor activities for other times of the day, even in winter or when the sky is cloudy.
+            You absorb UV radiation year-round, and clouds offer little protection from damaging rays.
+            Avoiding the sun at its strongest helps you avoid the sunburns and suntans that cause skin damage and increase your risk of developing skin cancer.
+            Sun exposure accumulated over time also may cause skin cancer.
+            <h4><strong>Wear sunscreen year-round</strong></h4>
+            Sunscreens don't filter out all harmful UV radiation, especially the radiation that can lead to melanoma.
+            But they play a major role in an overall sun protection program.
+            Use a broad-spectrum sunscreen with an SPF of at least 30, even on cloudy days.
+            Apply sunscreen generously, and reapply every two hours — or more often if you're swimming or perspiring.
+            Use a generous amount of sunscreen on all exposed skin, including your lips, the tips of your ears, and the backs of your hands and neck.
+            <h4><strong>Wear protective clothing</strong></h4>
+            Sunscreens don't provide complete protection from UV rays.
+            So cover your skin with dark, tightly woven clothing that covers your arms and legs, and a broad-brimmed hat, which provides more protection than a baseball cap or visor does.
+            Some companies also sell photoprotective clothing.
+            A dermatologist can recommend an appropriate brand.
+            Don't forget sunglasses. Look for those that block both types of UV radiation — UVA and UVB rays.
+            <h4><strong>Avoid tanning beds</strong></h4>
+            Lights used in tanning beds emit UV rays and can increase your risk of skin cancer.
+            <h4><strong>Be aware of sun-sensitizing medications</strong></h4>
+            Some common prescription and over-the-counter drugs, including antibiotics, can make your skin more sensitive to sunlight.
+            Ask your doctor or pharmacist about the side effects of any medications you take.
+            If they increase your sensitivity to sunlight, take extra precautions to stay out of the sun in order to protect your skin.
+            <h4><strong>Check your skin regularly and report changes to your doctor</strong></h4>
+            Examine your skin often for new skin growths or changes in existing moles, freckles, bumps and birthmarks.
+            With the help of mirrors, check your face, neck, ears and scalp.
+            Examine your chest and trunk, and the tops and undersides of your arms and hands.
+            Examine both the front and back of your legs, and your feet, including the soles and the spaces between your toes.
+            Also check your genital area and between your buttocks.
+        </p>
+        <h3 style="background-color:Pink;">What increases risk of skin cancer?</h3>
+        <p class="lead">
+        </p>
+
+</body>
+
+</div>
+</div>
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <a href="https://www.ismiletechnologies.com/home-4/" class="sf-with-ul" style="color:Grey"><div>Contact Us</div></a>
+    <p> ©️ Made with ❤️ at iSmile Technologies- {% now "Y" %}</p>
+    </div>
+</footer>

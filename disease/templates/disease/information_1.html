@@ -1,0 +1,85 @@
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'disease/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'disease/bootstrap.css' %}">
+<title>Information</title>
+</head>
+<body class="side-header" >
+  <div id="wrapper" class="clearfix" style="opacity: 1; animation-duration: 1500ms;">
+    <header id="header" class="no-sticky">
+
+		<div id="header-wrap">
+
+			<div class="container clearfix">
+
+				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+				<!-- Logo
+				============================================= -->
+				<div id="logo" class="nobottomborder">
+          <a class="standard-logo"><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+					<a class="retina-logo" ><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+
+				</div><!-- #logo end -->
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu">
+
+					<ul class="sf-js-enabled">
+						<li class="sub-menu"><a href="{% url 'disease:index'%}" class="sf-with-ul"><div>Home</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:uploadskin'%}" class="sf-with-ul"><div>Skin Detector</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:information'%}" class="sf-with-ul"><div>Information Page</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:help'%}" class="sf-with-ul"><div>Risks and Prevention</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:seedoctor'%}" class="sf-with-ul"><div>See Doctor</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:contact'%}" class="sf-with-ul"><div>About Us</div></a></li>
+					</ul>
+
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</div>
+
+    </header>
+
+
+<div class='container' >
+
+        <h2 class='display-4'>Skin Cancer Information</h2>
+        <hr>
+        <h3 style="background-color:Pink;">Non-melanoma skin cancers</h3>
+        <p class="lead">
+          These are the most common types of skin cancer and include basal cell and squamous cell carcinomas. They tend to grow in areas of the body that have been exposed to the sun and are more common in older people.
+          In 2013 there were 9,791 non-melanoma skin cancers diagnosed in Ireland.
+        </p>
+        <h3 style="background-color:Pink;">Melanoma skin cancers</h3>
+        <p class="lead">
+          Melanoma is quite rare but greater numbers of people are being diagnosed with it each year. It is also a disease that affects young people. In 2013, 984 people were diagnosed with melanoma in Ireland.
+          Melanoma is one of the most serious forms of skin cancer but if spotted early, it is very treatable. If not, it can spread to other parts of the body and cause serious medical issues. 
+        </p>
+        <h3 style="background-color:Pink;">What increases risk of skin cancer?</h3>
+        <p class="lead">
+          Everyone who spends time outdoors is at risk of skin cancer, not just people who sunbathe. This includes people who work and play outdoors.
+          However there are a few things that increase your risk even more. They include having:
+          <li style ="font-size:1.1rem; font-weight: 300">Pale or freckled skin that does not tan or burns before it tans</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Naturally red or fair hair</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Blue, green or grey eyes</li>
+          <li style ="font-size:1.1rem; font-weight: 300">A large number of moles (50 or more)</li>
+          <li style ="font-size:1.1rem; font-weight: 300">A history of sunburn</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Already had skin cancer</li>
+          <li style ="font-size:1.1rem; font-weight: 300">A close family member who has or had skin cancer</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Ever used a sunbed</li>
+        </p>
+
+</body>
+
+</div>
+</div>
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <a href="https://www.ismiletechnologies.com/home-4/" class="sf-with-ul" style="color:Grey"><div>Contact Us</div></a>
+    <p> ©️ Made with ❤️ at iSmile Technologies- {% now "Y" %}</p>
+    </div>
+</footer>

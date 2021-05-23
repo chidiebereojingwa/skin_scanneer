@@ -1,0 +1,70 @@
+{% block content %}
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'disease/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'disease/bootstrap.css' %}">
+<title>Skin Test</title>
+</head>
+<body class="side-header">
+
+  <div id="wrapper" class="clearfix" style="opacity: 1; animation-duration: 1500ms;">
+<header id="header" class="no-sticky">
+
+		<div id="header-wrap">
+
+			<div class="container clearfix">
+
+				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+				<!-- Logo
+				============================================= -->
+				<div id="logo" class="nobottomborder">
+          <a class="standard-logo"><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+					<a class="retina-logo" ><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+				</div><!-- #logo end -->
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu">
+
+					<ul class="sf-js-enabled">
+						<li class="sub-menu"><a href="{% url 'disease:index'%}" class="sf-with-ul"><div>Home</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:uploadskin'%}" class="sf-with-ul"><div>Skin Detector</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:information'%}" class="sf-with-ul"><div>Information Page</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:help'%}" class="sf-with-ul"><div>Risks and Prevention</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:seedoctor'%}" class="sf-with-ul"><div>See Doctor</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:contact'%}" class="sf-with-ul"><div>About Us</div></a></li>
+					</ul>
+
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</div>
+
+	</header>
+
+<div class="heading-block center top-padding">
+  <h1 style="background-color:Pink;">Skin Test</h1>
+  <span>Please upload closeup photo of your skin</span>
+</div>
+  <div class="col_half">
+    <form action="{% url 'disease:resultsskin'%}" method="post" enctype="multipart/form-data" class="center">
+    {% csrf_token %}
+      <div class="clearfix">
+        <h2>Upload skin image</h2>
+        <input type="file" value="Browse" name="file" class="my-sm-5" style="width:218px"/>
+      </div>
+        <input type="submit" value="Check skin health" class="btn-primary black btn-lg my-sm-4" style="color: Black; background-color: lightgrey;border: 3pt lightgrey">
+    </form>
+  </div>
+  <div class="col_half col_last center">
+    <h2>Example</h2>
+    <img src="{% static 'disease/skin_image.jpg' %}" style="width:400px"/>
+
+  </div>
+
+
+</div>
+</body>
+{% endblock %}

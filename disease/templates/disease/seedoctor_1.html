@@ -1,0 +1,82 @@
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'disease/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'disease/bootstrap.css' %}">
+<title>See Doctor</title>
+</head>
+<body class="side-header" >
+  <div id="wrapper" class="clearfix" style="opacity: 1; animation-duration: 1500ms;">
+    <header id="header" class="no-sticky">
+
+		<div id="header-wrap">
+
+			<div class="container clearfix">
+
+				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+				<!-- Logo
+				============================================= -->
+				<div id="logo" class="nobottomborder">
+          <a class="standard-logo"><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+					<a class="retina-logo" ><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+
+				</div><!-- #logo end -->
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu">
+
+					<ul class="sf-js-enabled">
+						<li class="sub-menu"><a href="{% url 'disease:index'%}" class="sf-with-ul"><div>Home</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:uploadskin'%}" class="sf-with-ul"><div>Skin Detector</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:help'%}" class="sf-with-ul"><div>Risks and Prevention</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:information'%}" class="sf-with-ul"><div>Information Page</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:seedoctor'%}" class="sf-with-ul"><div>See Doctor</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:contact'%}" class="sf-with-ul"><div>About Us</div></a></li>
+					</ul>
+
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</div>
+
+    </header>
+
+
+<div class='container' >
+
+        <h2 class='display-4'></h2>
+        <hr>
+        <h3 style="background-color:Pink;">When to see a doctor: </h3>
+        <h4><Strong>Point out anything you’re concerned about to your doctor, including:</strong></h4>
+        <p class="lead">
+          <li style ="font-size:1.1rem; font-weight: 300">Any new spots</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Any spot that doesn’t look like others on your body</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Any sore that doesn’t heal</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Redness or new swelling beyond the border of a mole </li>
+          <li style ="font-size:1.1rem; font-weight: 300">Color that spreads from the border of a spot into surrounding skin</li>
+          <li style ="font-size:1.1rem; font-weight: 300">Itching, pain, or tenderness in an area that doesn't go away or goes away then comes back </li>
+          <li style ="font-size:1.1rem; font-weight: 300">Changes in the surface of a mole: oozing, scaliness, bleeding, or the appearance of a lump or bump </li>
+        </p>
+
+</body>
+
+</div>
+</div>
+
+<footer class="text-muted">
+  <div class="container text-center">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <a href="https://www.ismiletechnologies.com/home-4/" class="sf-with-ul" style="color:Grey"><div>Contact Us</div></a>
+    <p> ©️ Made with ❤️ at iSmile Technologies- {% now "Y" %}</p>
+    </div>
+</footer>

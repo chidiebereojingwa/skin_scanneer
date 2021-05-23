@@ -1,0 +1,97 @@
+{% load static %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'disease/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'disease/bootstrap.css' %}">
+<title>About Us</title>
+</head>
+<body class="side-header" >
+  <div id="wrapper" class="clearfix" style="opacity: 1; animation-duration: 1500ms;">
+    <header id="header" class="no-sticky">
+
+		<div id="header-wrap">
+
+			<div class="container clearfix">
+
+				<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+				<!-- Logo
+				============================================= -->
+				<div id="logo" class="nobottomborder">
+          <a class="standard-logo"><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+					<a class="retina-logo" ><img src="{% static 'disease/logo.jpg' %}" alt="Canvas Logo"></a>
+
+				</div><!-- #logo end -->
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu">
+
+					<ul class="sf-js-enabled">
+						<li class="sub-menu"><a href="{% url 'disease:index'%}" class="sf-with-ul"><div>Home</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:uploadskin'%}" class="sf-with-ul"><div>Skin Detector</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:information'%}" class="sf-with-ul"><div>Information Page</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:help'%}" class="sf-with-ul"><div>Risks and Prevention</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:seedoctor'%}" class="sf-with-ul"><div>See Doctor</div></a></li>
+            <li class="sub-menu"><a href="{% url 'disease:contact'%}" class="sf-with-ul"><div>About Us</div></a></li>
+					</ul>
+
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</div>
+
+    </header>
+
+
+<div class='container' >
+
+        <h2 class='display-4'>About us</h2>
+        <hr>
+        <h3 style="background-color:Pink;">The Mission</h3>
+        <p class="lead">
+          Since our founding in 2020, MySkinDoc has been the go-to skin cancer detection service for countless people.
+          MySkinDoc is a platform where the user can upload the picture of the spot on the skin and our trained model would classify the cancer as either high or low risk.
+          Users can also compare and track any skin changes over time through our MyJounal feature.
+        </p>
+        <h3 style="background-color:Pink;">Process</h3>
+        <p class="lead">
+            This application uses Image processing, Deep Learning and Google Cloud functionalities to process the input image, calssify it and predict the health condition
+        </p>
+
+        <h3 style="background-color:Pink;">Future plans</h3>
+        <p class="lead" >
+                <li style ="font-size:1.1rem; font-weight: 300"> Creating a mobile application to increase the reach of application.</li>
+                <li style ="font-size:1.1rem; font-weight: 300"> Collect more data to tune the performance of Machine learning model. </li>
+                <li style ="font-size:1.1rem; font-weight: 300"> Collaborating with hospitals and connecting users to respective hospitals based on user health condition</li>
+        </p>
+        <br/>
+
+    <!--</div>
+    <div class='container'>
+        <hr>
+        <h3 class='display-5'></h3>
+        <br>
+        <div class='row'>
+            <div class="col_half col_last center">
+
+                <img src="{% static 'disease/logo.jpg' %}" alt="Descritption" width="250px">
+                <h4>Contact US </h4>
+
+                <a href="https://www.ismiletechnologies.com/home-4/" class="sf-with-ul"><div>iSmile Technologies</div></a>
+            </div>
+        </div>
+    </div>-->
+
+
+</body>
+
+</div>
+</div>
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <a href="https://www.ismiletechnologies.com/home-4/" class="sf-with-ul" style="color:Grey"><div>Contact Us</div></a>
+    <p> ©️ Made with ❤️ at iSmile Technologies- {% now "Y" %}</p>
+    </div>
+</footer>
